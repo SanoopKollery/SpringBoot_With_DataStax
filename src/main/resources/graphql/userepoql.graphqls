@@ -1,0 +1,21 @@
+type Employee {
+	fname: String!,
+	lname: String!,
+	age: Int,
+	joindate: String!,
+	Salary: Float
+}
+
+type ApiResponse{
+	message: String
+}
+
+type Query {
+	employee(id: ID!): Employee
+}
+
+type Mutation {
+	createEmployee(fname: String!,lname: String!,age: Int!,joindate: String!,salary: Float!): Employee
+	deleteEmployee(id: String!): ApiResponse
+	#updateEmployee(id: String! ,lname: String!,age: Int!,joindate: String!,salary: Float!): Employee
+}

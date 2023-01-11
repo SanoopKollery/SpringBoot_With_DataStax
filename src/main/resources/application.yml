@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: betterreads
+
+  data:
+    cassandra:
+      keyspace-name: timesheet
+      username: FgYRbTajeRqHpFhxCLenJxiR
+      password: Brj8d2acpnUTpmh-wcY,sdbAqGd5wJkdoShyPSA6,CdUOEM.QCeSuOLyn9S75mElb_KxQ_pfqFm6w-MfF,piZZrSj5WLm.G+58SIu2kjqxduSUXC+-viD7eJ0uixNhZk
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+
+
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+
+astra.db:
+    id: f1417330-e104-4f46-9b3b-9afd62179f59
+    region: us-east1
+    keyspace: timesheet
+    application.token: AstraCS:FgYRbTajeRqHpFhxCLenJxiR:01e874371e06a2ce4a742eb3b81c5cb7b537c7654dcd4b81ca999a44f0a165ee
+server:
+  port: 9092
